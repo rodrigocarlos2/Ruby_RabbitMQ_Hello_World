@@ -7,7 +7,7 @@ conn = Bunny.new(:automatically_recover => false)
 conn.start
 
 ch = conn.create_channel
-q = ch.queue("hello")
+q = ch.queue("user")
 
 begin
   puts " [*] Waiting for messages. To exit press CTRL+C"
